@@ -1,5 +1,9 @@
 <?php
 
+if ($_GET['secret'] !== 'secret') {
+    die('ERROR');	
+}
+
 include('functions.php');
 
 if ($_GET['format'] === 'json') {
